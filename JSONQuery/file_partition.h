@@ -2,6 +2,7 @@
 #define __FILE_PARTITION_H__
 
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct PartitionInfo
 {

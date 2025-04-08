@@ -6,5 +6,6 @@ char* substring(char *pText, int begin, int end);
 char* allocate_and_copy(char* pText);
 char* ltrim(char *s); //reduct blank from left
 int left_null_count(char *s);  //calculate the number of blanket for each string
+void substring_in_place(char* desc, char *pText, int begin, int end);
 
 #endif // !__UTILITY_H__

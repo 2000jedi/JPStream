@@ -16,6 +16,7 @@
 #ifndef __USE_GNU
 #define __USE_GNU 1
 #endif
+typedef int clockid_t;
 #include <pthread.h>
 
 #define MAX_THREAD 100
@@ -378,7 +379,7 @@ void executeParallelAutomata(ParallelAutomata* pa, PartitionInfo par_info, Const
     	if (rc)
         {
             printf("ERROR; return code is %d\n", rc);
-            return 0;
+            return;
         }
     }
     for (i = 0; i <num_cores; i++)

@@ -7,12 +7,12 @@ set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin )
 set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib )
 set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib )
 
-set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
+# set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
 ## Compiler Standard
 # SET (CMAKE_C_COMPILER "/usr/bin/clang-6.0")
 SET (CMAKE_CXX_FLAGS_DEBUG "-g -D_GLIBCXX_DEBUG")
 SET (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -mcmodel=medium")
-SET (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c99 -Wall -mcmodel=medium")
+SET (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11 -Wall -mcmodel=medium")
 
 add_subdirectory(DFABuilder)
 add_subdirectory(JSONPathParser)

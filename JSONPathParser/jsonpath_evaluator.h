@@ -3,6 +3,7 @@
 
 #include "jsonpath_model.h"
 #include <string.h>
+#include <ctype.h>
 
 #ifdef __cplusplus
 extern "C" {
